@@ -1,15 +1,14 @@
 //
-//  BUNavigationControllerDelegate.h
+//  BUTabBarVCDelegate.h
 //  myCustomTransitions
 //
-//  Created by BLUE on 17/2/11.
+//  Created by guopu on 2017/2/21.
 //  Copyright © 2017年 BLUE. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "BUSlideAnimationController.h"
 
-@interface BUNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
+@interface BUTabBarVCDelegate : NSObject <UITabBarControllerDelegate>
 
 @property (nonatomic, assign) BOOL interactive;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactionController;

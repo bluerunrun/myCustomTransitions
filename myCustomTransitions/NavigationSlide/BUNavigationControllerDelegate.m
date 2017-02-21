@@ -8,10 +8,15 @@
 
 #import "BUNavigationControllerDelegate.h"
 
-
-
 @implementation BUNavigationControllerDelegate
 
+-(instancetype)init{
+    if (self = [super init]) {
+        _interactive = NO;
+        _interactionController = [[UIPercentDrivenInteractiveTransition alloc] init];
+    }
+    return self;
+}
 
 -(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     BUTransitionType type = operation == UINavigationControllerOperationPush?Transition_Navigation_Push:Transition_Navigation_Pop;

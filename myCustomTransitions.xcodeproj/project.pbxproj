@@ -21,6 +21,11 @@
 		3201DB7F1E4F05FF007C46AB /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3201DB7E1E4F05FF007C46AB /* PopViewController.m */; };
 		3201DB821E4F07D3007C46AB /* BUNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3201DB811E4F07D3007C46AB /* BUNavigationControllerDelegate.m */; };
 		3201DB851E4F0C6A007C46AB /* BUSlideAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3201DB841E4F0C6A007C46AB /* BUSlideAnimationController.m */; };
+		7A2DEC9E1E5C13AE00C81930 /* TabBarSlide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2DEC9D1E5C13AE00C81930 /* TabBarSlide.storyboard */; };
+		7A2DECA11E5C148A00C81930 /* BUTabBarVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DECA01E5C148A00C81930 /* BUTabBarVCDelegate.m */; };
+		7A2DECA41E5C1D1700C81930 /* ScrollTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DECA31E5C1D1700C81930 /* ScrollTabBarController.m */; };
+		7A2DECA71E5C239F00C81930 /* AAPLSlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DECA61E5C239F00C81930 /* AAPLSlideTransitionAnimator.m */; };
+		7A2DECAA1E5C282F00C81930 /* AAPLSlideTransitionInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DECA91E5C282F00C81930 /* AAPLSlideTransitionInteractionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,15 @@
 		3201DB811E4F07D3007C46AB /* BUNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUNavigationControllerDelegate.m; sourceTree = "<group>"; };
 		3201DB831E4F0C6A007C46AB /* BUSlideAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSlideAnimationController.h; sourceTree = "<group>"; };
 		3201DB841E4F0C6A007C46AB /* BUSlideAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSlideAnimationController.m; sourceTree = "<group>"; };
+		7A2DEC9D1E5C13AE00C81930 /* TabBarSlide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarSlide.storyboard; sourceTree = "<group>"; };
+		7A2DEC9F1E5C148A00C81930 /* BUTabBarVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUTabBarVCDelegate.h; sourceTree = "<group>"; };
+		7A2DECA01E5C148A00C81930 /* BUTabBarVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUTabBarVCDelegate.m; sourceTree = "<group>"; };
+		7A2DECA21E5C1D1700C81930 /* ScrollTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTabBarController.h; sourceTree = "<group>"; };
+		7A2DECA31E5C1D1700C81930 /* ScrollTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTabBarController.m; sourceTree = "<group>"; };
+		7A2DECA51E5C239F00C81930 /* AAPLSlideTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSlideTransitionAnimator.h; sourceTree = "<group>"; };
+		7A2DECA61E5C239F00C81930 /* AAPLSlideTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLSlideTransitionAnimator.m; sourceTree = "<group>"; };
+		7A2DECA81E5C282F00C81930 /* AAPLSlideTransitionInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLSlideTransitionInteractionController.h; sourceTree = "<group>"; };
+		7A2DECA91E5C282F00C81930 /* AAPLSlideTransitionInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLSlideTransitionInteractionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +132,7 @@
 		3201DB3B1E4F024D007C46AB /* myCustomTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				7A2DEC9C1E5C132200C81930 /* TabBarSlide */,
 				3201DB751E4F0538007C46AB /* NavigationSlide */,
 				3201DB3F1E4F024D007C46AB /* AppDelegate.h */,
 				3201DB401E4F024D007C46AB /* AppDelegate.m */,
@@ -174,6 +189,23 @@
 				3201DB841E4F0C6A007C46AB /* BUSlideAnimationController.m */,
 			);
 			path = NavigationSlide;
+			sourceTree = "<group>";
+		};
+		7A2DEC9C1E5C132200C81930 /* TabBarSlide */ = {
+			isa = PBXGroup;
+			children = (
+				7A2DEC9D1E5C13AE00C81930 /* TabBarSlide.storyboard */,
+				7A2DECA21E5C1D1700C81930 /* ScrollTabBarController.h */,
+				7A2DECA31E5C1D1700C81930 /* ScrollTabBarController.m */,
+				7A2DEC9F1E5C148A00C81930 /* BUTabBarVCDelegate.h */,
+				7A2DECA01E5C148A00C81930 /* BUTabBarVCDelegate.m */,
+				7A2DECA81E5C282F00C81930 /* AAPLSlideTransitionInteractionController.h */,
+				7A2DECA91E5C282F00C81930 /* AAPLSlideTransitionInteractionController.m */,
+				7A2DECA51E5C239F00C81930 /* AAPLSlideTransitionAnimator.h */,
+				7A2DECA61E5C239F00C81930 /* AAPLSlideTransitionAnimator.m */,
+			);
+			name = TabBarSlide;
+			path = TabbarSlide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +319,7 @@
 			files = (
 				3201DB4C1E4F024D007C46AB /* LaunchScreen.storyboard in Resources */,
 				3201DB491E4F024D007C46AB /* Assets.xcassets in Resources */,
+				7A2DEC9E1E5C13AE00C81930 /* TabBarSlide.storyboard in Resources */,
 				3201DB771E4F058C007C46AB /* NavigationSlide.storyboard in Resources */,
 				3201DB471E4F024D007C46AB /* Main.storyboard in Resources */,
 			);
@@ -313,14 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2DECA41E5C1D1700C81930 /* ScrollTabBarController.m in Sources */,
 				3201DB7F1E4F05FF007C46AB /* PopViewController.m in Sources */,
+				7A2DECA71E5C239F00C81930 /* AAPLSlideTransitionAnimator.m in Sources */,
 				3201DB411E4F024D007C46AB /* AppDelegate.m in Sources */,
 				3201DB7B1E4F05C6007C46AB /* PushViewController.m in Sources */,
 				3201DB851E4F0C6A007C46AB /* BUSlideAnimationController.m in Sources */,
 				3201DB3E1E4F024D007C46AB /* main.m in Sources */,
 				3201DB741E4F042D007C46AB /* BUExternalStoryboardSegue.m in Sources */,
+				7A2DECA11E5C148A00C81930 /* BUTabBarVCDelegate.m in Sources */,
 				3201DB711E4F03AC007C46AB /* BUMenuViewcontrolooer.m in Sources */,
 				3201DB821E4F07D3007C46AB /* BUNavigationControllerDelegate.m in Sources */,
+				7A2DECAA1E5C282F00C81930 /* AAPLSlideTransitionInteractionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

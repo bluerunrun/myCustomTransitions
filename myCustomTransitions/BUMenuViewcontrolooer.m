@@ -16,7 +16,7 @@
     // Certain examples are only supported on iOS 8 and later.
     if ([UIDevice currentDevice].systemVersion.floatValue < 8.f)
     {
-        NSArray *iOS7Examples = @[@"CrossDissolve", @"Dynamics", @"Swipe", @"NavigationSlide", @"Slide"];
+        NSArray *iOS7Examples = @[@"CrossDissolve", @"Dynamics", @"Swipe", @"NavigationSlide", @"TabBarSlide"];
         
         if ([iOS7Examples containsObject:identifier] == NO) {
             [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
